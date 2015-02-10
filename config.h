@@ -10,6 +10,7 @@ const int SCROLL_X_DIST_LIMIT = 4; // physical x dist to scroll (mm)
 const int SCROLL_Y_DIST_LIMIT = 4; // physical y dist to scroll (mm)
 const int VSCROLL_LIMIT = 1; // physical y dist to trigger a vscroll (mm)
 const int THREE_DRAG_DIST_LIMIT = 4; // physical dist step for three-finger drag (mm)
+const bool DISABLE_THREE_DRAG = false;
 
 const double MOVE_X_SCALE = 1.0; // x scale during movement, range: (0, inf)
 const double MOVE_Y_SCALE = 1.0; // y scale during movement, range: (0, inf)

@@ -600,7 +600,7 @@ public:
 				fingers[f3].save_pos();
 			} else {
 				if (d1 > three_drag_test || d2 > three_drag_test || d3 > three_drag_test) {
-					if (!in_three_drag) {
+					if ((!in_three_drag) && (!DISABLE_THREE_DRAG)) {
 						dpy.press(true, 0);
 						in_three_drag = true;
 					}
