@@ -5,12 +5,12 @@
 
 const int PRESSURE_LIMIT = 15; // range: 0~255 (v4)
 
-const int ZOOM_DIST_LIMIT = 6; // zoom step physical limit (mm)
+const int ZOOM_DIST_LIMIT = 12; // zoom step physical limit (mm)
 const int SCROLL_X_DIST_LIMIT = 4; // physical x dist to scroll (mm)
 const int SCROLL_Y_DIST_LIMIT = 4; // physical y dist to scroll (mm)
 const int VSCROLL_LIMIT = 1; // physical y dist to trigger a vscroll (mm)
 const int THREE_DRAG_DIST_LIMIT = 4; // physical dist step for three-finger drag (mm)
-const bool DISABLE_THREE_DRAG = false;
+const bool DISABLE_THREE_DRAG = true;
 
 const double MOVE_X_SCALE = 1.0; // x scale during movement, range: (0, inf)
 const double MOVE_Y_SCALE = 1.0; // y scale during movement, range: (0, inf)
@@ -66,7 +66,7 @@ const int AVG_WINDOW[] = {10, 8, 3, -1};
 const int ACCEL_SCALE = 100;
 const int ACCEL_ACCELERATION = 10;
 
-const int DISABLE_TAP = 0;
+const int DISABLE_TAP = 1;
 const bool TWO_FINGER_NATURAL_SCROLL = true;
 
 #endif //  _ELANBSD_CONFIG_H_
